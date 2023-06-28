@@ -5,13 +5,13 @@
 
     //Entrada
     const idade = parseInt(prompt(`qual a sua idade`))
-    let idade1 = idade (idade - 18) 
+    let idade1 = 18 - idade
 
 
     //Processamento
-    let mensagem = (idade > 18) ? "voce é velho"
-    :(idade < 18)? "bebezinho"
-    : 
+    let mensagem = (idade >= 18) ? "voce é velho"
+    :(idade <= 17)? `voce é um bebe e falta ${idade1} para 18 anos`
+    : "";
 
 
 

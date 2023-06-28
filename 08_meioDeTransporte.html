@@ -6,13 +6,23 @@
     // Verifique qual é o meio de transporte mais barato e apresente em tela, especificando quanto custará para ir e voltar do trabalho diariamente.
 
     //Entrada
+    const trans = parseInt(prompt(`qual o preço do litro do combustivel`))
+    const litros = parseInt (prompt(`quantos litros voce usa para se deslocar do trabalho`))
+ const preço = parseInt (prompt(`qual o preço do transporte publico que ultiliza para se deslocar diariamente`))
 
+ let carro = trans * litros
+ let carro1 = carro * 2
+ let outro = preço * 2
 
 
     //Processamento
+    let mensagemFinal = (carro < preço) ? ` o mais barato é o carro e voce vai pagar ${carro1} por dia`
+    : (preço < carro) ? `o mais barato é o transporte publico e voce vai pagar ${outro} por dia`
+    :"";
 
     
     //Saída
+    document.write(mensagemFinal)
 
     
 </script>
