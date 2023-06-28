@@ -8,9 +8,16 @@
     // - cães grandes: fator 7.
 
     //Entrada
+    const caes = parseInt (prompt(`qual o porte do seu cão`))
+    let idade1 = caes * 5
+    let idade2 = caes * 6
+    let idade3 = caes * 7
 
 
     //Processamento
+    let mensagemFinal = (caes = pequeno) ? `ele tem ${idade1} em anos humanos`
+    :(caes = medio) ? `ele tem ${idade2} em anos humanos`
+    :""
 
     
     //Saída

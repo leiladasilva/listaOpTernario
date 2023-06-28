@@ -8,11 +8,22 @@
         //- acima de 1500: aumento de 5 %
     
     //Entrada
+    const numero = parseInt(prompt(`informe o preço`))
+    let aumento1 = numero + (numero * 20/100)
+    let aumento2 = numero + (numero * 15/100)
+    let aumento3 = numero + (numero * 10/100)
+    let aumento4 = numero + (numero * 5/100)
 
 
     //Processamento
+    let mensagemFinal = (numero <= 280 ) ? `o aumento é de ${aumento1}`
+    :(numero >= 700 ) ? `o aumento vai ser de ${aumento2}`
+    :(numero >= 1500 ) ? `o aumento vai ser de ${aumento3}`
+    : (numero <= 1501 ) ? `o aumento vai ser de ${aumento4}`
+    :"";
 
     
     //Saída
+    document.write(mensagemFinal)
 
 </script>
