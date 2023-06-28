@@ -10,11 +10,19 @@
     // Entre 5.9 e zero            E
 
     //Entrada
+    const nota = parseInt (prompt(`qual foi a sua nota`))
 
 
     //Processamento
+    let mensagemFinal = (nota >= 10)? `voce tirou A`
+    : (nota <= 8.9) ? `voce tirou B`
+    : (nota >= 7.9) ? `voce tirou  C`
+    : (nota <= 6.9) ? `voce tirou D`
+    : (nota <= 5.9 ) ? `voce tirou E`
+    : "" ;
 
     
     //Saída
+    document.write(mensagemFinal)
 
 </script>
